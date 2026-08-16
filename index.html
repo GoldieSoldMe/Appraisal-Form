@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Matt Goldie Painless Appraisal Process | Goldie Sold Me</title>
+  <meta name="description" content="Matt Goldie’s painless appraisal process — a simple, no-pressure way to get a preliminary value for your vehicle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --bg:#0c0c0d;--card:#fffdf8;--ink:#181818;--muted:#6f6a61;--line:#e7e0d5;
+  --black:#0c0c0d;--gold:#c89b3c;--gold2:#f1cf78;--cream:#f8f2e7;--soft:#f5eee2;
+  --green:#17815f;--shadow:0 30px 80px rgba(0,0,0,.30);--radius:28px
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:
+radial-gradient(circle at 15% 5%,rgba(200,155,60,.16),transparent 26%),
+linear-gradient(180deg,#0b0b0c 0,#141414 44%,#ece5d9 44%,#f4efe7 100%);color:var(--ink)}
+.page-shell{max-width:1080px;margin:0 auto;padding:34px 18px 72px}
+.hero{background:#0f0f10;color:#fff;border:1px solid rgba(255,255,255,.09);border-radius:30px 30px 0 0;padding:34px 48px 64px;position:relative;overflow:hidden}
+.hero:before{content:"G";position:absolute;right:-25px;top:-80px;font-family:Montserrat,sans-serif;font-size:430px;line-height:1;font-weight:800;color:rgba(255,255,255,.025);transform:rotate(-7deg)}
+.hero:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:4px;background:linear-gradient(90deg,transparent,var(--gold2),var(--gold),transparent)}
+.brand-row{display:flex;align-items:center;gap:14px;position:relative;z-index:1}
+.brand-mark{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.04em;font-size:19px;border:1px solid rgba(241,207,120,.7);padding:9px 12px;border-radius:10px;color:#fff}
+.brand-mark em{font-style:normal;color:var(--gold2)}
+.brand-sub{font-size:10px;letter-spacing:.22em;color:#b7b2aa;text-transform:uppercase}
+.hero-copy{max-width:780px;margin-top:58px;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.18em;color:#161616;background:linear-gradient(135deg,var(--gold2),#e4b85b);padding:8px 11px;border-radius:999px}
+h1{font-family:Montserrat,sans-serif;font-size:clamp(38px,6vw,67px);line-height:1.01;margin:18px 0 20px;letter-spacing:-.048em;max-width:900px}
+h1 span{color:var(--gold2)}
+.hero p{font-size:18px;line-height:1.65;max-width:680px;color:#d3d0ca;margin:0}
+.trust-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;font-size:12px;color:#ece7de;font-weight:700}
+.trust-row span{border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.04);padding:9px 12px;border-radius:999px}
+.app-card{background:var(--card);border-radius:0 0 30px 30px;box-shadow:var(--shadow);padding:36px 48px 46px;border:1px solid #e8dfd1;border-top:0}
+.progress-wrap{margin-bottom:34px}.progress-meta{display:flex;justify-content:space-between;font-size:11px;font-weight:800;color:#7d756a;margin-bottom:9px;text-transform:uppercase;letter-spacing:.08em}
+.progress-track{height:6px;background:#ece5db;border-radius:999px;overflow:hidden}.progress-bar{height:100%;width:12.5%;background:linear-gradient(90deg,#a87822,var(--gold2));transition:.3s}
+.step{display:none}.step.active{display:block;animation:fade .22s ease}@keyframes fade{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}
+.step-heading{display:flex;gap:16px;align-items:flex-start;margin-bottom:30px}.step-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:#191919;color:var(--gold2);font-size:21px;box-shadow:inset 0 0 0 1px #2b2b2b}
+.step-heading h2{margin:0 0 6px;font-size:28px;letter-spacing:-.035em}.step-heading p{margin:0;color:var(--muted);line-height:1.5}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}.field>span,legend{font-size:13px;font-weight:800;color:#36312c}.field b{color:#b42318}
+input,select,textarea{width:100%;border:1px solid #d8d0c5;border-radius:12px;padding:13px 14px;font:inherit;color:var(--ink);background:#fff;outline:none;transition:.15s}
+input:focus,select:focus,textarea:focus{border-color:#bf923a;box-shadow:0 0 0 4px rgba(200,155,60,.13)}textarea{resize:vertical}
+small,.muted{color:var(--muted);font-size:12px}.vin-row{display:grid;grid-template-columns:1fr auto;gap:10px}
+.vehicle-card{display:flex;align-items:center;gap:13px;padding:15px;border-radius:14px;background:#f2f7f4;border:1px solid #cbe0d5;margin-bottom:20px}.vehicle-card .vehicle-icon{width:34px;height:34px;display:grid;place-items:center;background:#dceee6;color:var(--green);border-radius:50%;font-weight:800}.vehicle-card strong,.vehicle-card span{display:block}.vehicle-card span{font-size:13px;color:#527064;margin-top:3px}
+.check-group{border:0;padding:0;margin:8px 0 22px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.check-group legend{grid-column:1/-1;margin-bottom:4px}.check-group label{display:flex;align-items:center;gap:9px;padding:11px 12px;background:#faf7f2;border:1px solid var(--line);border-radius:11px;font-size:13px}.check-group input{width:auto}.check-group.cards{grid-template-columns:repeat(2,1fr)}
+.rating-block{margin:18px 0 26px}.rating-block label{display:flex;justify-content:space-between;font-weight:700;font-size:14px;margin-bottom:12px}.rating-block output{color:#9b6e1d}input[type=range]{padding:0;border:0;box-shadow:none;accent-color:#b8842d}
+.upload-zone{display:flex;flex-direction:column;align-items:center;text-align:center;padding:34px 20px;border:2px dashed #c8bda9;border-radius:18px;background:#faf7f1;cursor:pointer}.upload-zone:hover{border-color:#b8842d}.upload-zone input{display:none}.upload-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#171717;color:var(--gold2);font-size:26px;margin-bottom:9px}.upload-zone span{color:var(--muted);font-size:13px;max-width:580px;line-height:1.5;margin-top:6px}.photo-preview{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}.photo-preview img{width:100%;aspect-ratio:1.3;object-fit:cover;border-radius:10px}
+.form-nav{display:flex;justify-content:space-between;gap:12px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}button{border:0;border-radius:12px;padding:13px 18px;font:inherit;font-weight:800;cursor:pointer}.primary-btn{margin-left:auto;background:linear-gradient(135deg,#d6aa50,#efcf83);color:#16130d;box-shadow:0 9px 24px rgba(171,122,29,.22)}.primary-btn:hover{filter:brightness(.98);transform:translateY(-1px)}.ghost-btn{background:#f0ebe3;color:#37312a}.secondary-btn{background:#171717;color:white}.hidden{display:none!important}
+.consent{display:flex;align-items:flex-start;gap:10px;font-size:12px;color:#625c54;background:#f6f1e8;padding:14px;border-radius:12px}.consent input{width:auto;margin-top:2px}
+.result{text-align:center;padding:8px 0 4px}.result-kicker{font-size:11px;letter-spacing:.16em;font-weight:900;color:#9b6e1d}.result h2{font-size:31px;margin:10px 0}.range{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(34px,7vw,58px);letter-spacing:-.05em;color:#171717;margin:12px 0}.result>p{color:var(--muted)}.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:25px 0}.result-grid div{background:#f6f1e8;border-radius:14px;padding:17px 10px}.result-grid span,.result-grid strong{display:block}.result-grid span{font-size:11px;color:var(--muted);margin-bottom:6px}.result-grid strong{font-size:18px}.notice{background:#fff7e5;color:#765721;border:1px solid #ead49d;text-align:left;padding:14px 16px;border-radius:12px;font-size:12px;line-height:1.5;margin:20px 0}
+footer{display:flex;justify-content:space-between;color:#4e4941;font-size:12px;padding:28px 8px}footer strong{color:#161616}
+@media(max-width:720px){.page-shell{padding:0 0 40px}.hero,.app-card{border-radius:0}.hero{padding:26px 22px 46px}.hero-copy{margin-top:42px}.app-card{padding:28px 20px 36px}.brand-row{align-items:flex-start;flex-direction:column;gap:9px}.grid-2{grid-template-columns:1fr}.check-group,.check-group.cards{grid-template-columns:1fr 1fr}.photo-preview{grid-template-columns:repeat(2,1fr)}.result-grid{grid-template-columns:1fr 1fr}footer{padding:24px 20px;flex-direction:column;gap:7px}}
+
+/* V2 brand polish */
+.hero{padding:30px 44px 58px;background:linear-gradient(145deg,#0b0b0c 0%,#111113 58%,#191713 100%)}
+.hero:before{content:"GOLDIE";right:-18px;top:112px;font-size:150px;letter-spacing:-.08em;transform:rotate(90deg);transform-origin:right top;color:rgba(255,255,255,.018)}
+.brand-row{justify-content:space-between}.brand-lockup{display:flex;align-items:center;gap:14px}.brand-mark{border-radius:999px;padding:9px 15px;box-shadow:0 0 0 1px rgba(241,207,120,.06) inset}
+.hero-status{font-size:11px;color:#bcb6aa;display:flex;align-items:center;gap:8px;letter-spacing:.04em}.hero-status span{width:7px;height:7px;border-radius:50%;background:#6fd6a8;box-shadow:0 0 0 5px rgba(111,214,168,.08)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.72fr);gap:54px;align-items:end;position:relative;z-index:1}
+.hero-copy{margin-top:62px}.hero-copy h1{font-size:clamp(40px,5.5vw,66px);max-width:760px}.hero-copy p{font-size:17px;max-width:650px}
+.hero-proof{border:1px solid rgba(241,207,120,.18);background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));backdrop-filter:blur(8px);border-radius:22px;padding:24px 22px 20px;box-shadow:0 22px 55px rgba(0,0,0,.22)}
+.proof-kicker{font-size:10px;letter-spacing:.20em;font-weight:900;color:var(--gold2);margin-bottom:12px}.proof-big{font-family:Montserrat,sans-serif;font-size:27px;line-height:1.04;letter-spacing:-.04em;color:#fff}.hero-proof>p{font-size:12.5px;line-height:1.55;color:#aaa59c;margin:12px 0 18px}.proof-line{height:1px;background:linear-gradient(90deg,rgba(241,207,120,.55),transparent);margin:4px 0 10px}.proof-mini{display:grid;grid-template-columns:30px 1fr;gap:8px;align-items:center;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.06)}.proof-mini:last-child{border-bottom:0}.proof-mini strong{font-size:10px;color:var(--gold2);letter-spacing:.12em}.proof-mini span{font-size:12px;color:#ddd8cf}
+.app-card{position:relative;padding-top:40px}.app-card:before{content:"PAINLESS, ON PURPOSE.";position:absolute;right:46px;top:18px;font-size:9px;font-weight:900;letter-spacing:.18em;color:#b7ac9b}
+.progress-track{height:5px}.progress-bar{box-shadow:0 0 18px rgba(200,155,60,.28)}
+.step-heading{margin-bottom:32px}.step-heading h2{font-size:30px}.step-icon{border-radius:16px;width:50px;height:50px;background:linear-gradient(145deg,#111,#23201b);box-shadow:inset 0 0 0 1px rgba(241,207,120,.18),0 8px 18px rgba(0,0,0,.09)}
+input,select,textarea{min-height:49px;border-radius:14px;background:#fffdfa}.field>span,legend{letter-spacing:-.01em}
+.primary-btn{border-radius:999px;padding:14px 22px;box-shadow:0 10px 26px rgba(171,122,29,.20)}.ghost-btn,.secondary-btn{border-radius:999px}
+.form-nav{align-items:center}.form-nav:after{content:"Your info goes directly to Matt.";order:-1;font-size:11px;color:#8b8276;margin-right:auto}.form-nav .ghost-btn{order:-2}
+footer{max-width:980px;margin:0 auto;opacity:.85}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:28px}.hero-proof{max-width:520px}.hero-copy{margin-top:44px}.brand-row{align-items:flex-start}.hero-status{display:none}.app-card:before{display:none}}
+@media(max-width:720px){.brand-lockup{flex-direction:column;align-items:flex-start;gap:8px}.hero{padding:25px 20px 40px}.hero-proof{padding:20px}.hero-copy h1{font-size:42px}.form-nav:after{display:none}}
+
+/* V3 simplified intake-first layout */
+.simple-hero{padding:26px 42px 30px;background:#0f0f10;border-radius:24px 24px 0 0}
+.simple-hero:before,.simple-hero:after{display:none}
+.simple-hero .brand-row{justify-content:flex-start}
+.simple-hero-copy{max-width:760px;margin-top:28px;position:relative;z-index:1}
+.simple-hero-copy .eyebrow{font-size:10px;padding:7px 10px}
+.simple-hero-copy h1{font-size:clamp(32px,5vw,50px);line-height:1.04;margin:14px 0 12px;max-width:760px}
+.simple-hero-copy p{font-size:15.5px;line-height:1.55;color:#c9c5bd;max-width:700px;margin:0}
+.app-card{padding-top:30px}
+.app-card:before{display:none}
+.progress-wrap{margin-bottom:26px}
+.step-heading{margin-bottom:24px}
+.step-heading h2{font-size:26px}
+.step-icon{width:42px;height:42px;border-radius:12px;font-size:18px}
+@media(max-width:720px){.simple-hero{padding:22px 20px 24px}.simple-hero-copy{margin-top:22px}.simple-hero-copy h1{font-size:34px}.simple-hero-copy p{font-size:14.5px}}
+</style>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero simple-hero">
+      <div class="brand-row">
+        <div class="brand-lockup">
+          <div class="brand-mark">GOLDIE <em>SOLD ME</em></div>
+          <div class="brand-sub">MATT GOLDIE SELLS CARS • COLORADO</div>
+        </div>
+      </div>
+      <div class="simple-hero-copy">
+        <span class="eyebrow">THE GOLDIE APPRAISAL WAY</span>
+        <h1>Quick info in. <span>Real numbers out.</span></h1>
+        <p>Tell me about your vehicle and its condition so I can review it properly and give you a realistic appraisal starting point.</p>
+      </div>
+    </section>
+
+    <section class="app-card">
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span id="stepLabel">Step 1 of 8</span>
+          <span id="progressPct">13%</span>
+        </div>
+        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+      </div>
+
+      <form id="appraisalForm" enctype="multipart/form-data" novalidate>
+        <!-- Step 1 -->
+        <div class="step active" data-step="1">
+          <div class="step-heading">
+            <span class="step-icon">🚘</span>
+            <div>
+              <h2>First, tell me what you’re driving</h2>
+              <p>VIN and mileage give me the cleanest starting point.</p>
+            </div>
+          </div>
+
+          <label class="field">
+            <span>VIN <b>*</b></span>
+            <div class="vin-row">
+              <input id="vin" name="vin" type="text" maxlength="17" minlength="17" placeholder="17-digit VIN" autocomplete="off" required>
+              <button id="decodeVinBtn" class="secondary-btn" type="button">Decode VIN</button>
+            </div>
+            <small id="vinStatus">We’ll automatically identify the vehicle.</small>
+          </label>
+
+          <div id="decodedVehicle" class="vehicle-card hidden">
+            <div class="vehicle-icon">✓</div>
+            <div>
+              <strong id="decodedTitle"></strong>
+              <span id="decodedSubtitle"></span>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <label class="field">
+              <span>Current mileage <b>*</b></span>
+              <input name="mileage" type="number" min="0" max="999999" placeholder="62,417" required>
+            </label>
+            <label class="field">
+              <span>Vehicle ZIP code <b>*</b></span>
+              <input name="vehicleZip" type="text" value="80550" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" required>
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label class="field">
+              <span>Exterior color</span>
+              <input name="exteriorColor" type="text" placeholder="White, Black, Silver...">
+            </label>
+            <label class="field">
+              <span>Trim / package</span>
+              <input id="trim" name="trim" type="text" placeholder="XLE, LTZ, Lariat...">
+            </label>
+          </div>
+
+          <input id="year" type="hidden" name="year">
+          <input id="make" type="hidden" name="make">
+          <input id="model" type="hidden" name="model">
+          <input id="driveType" type="hidden" name="driveType">
+          <input id="bodyClass" type="hidden" name="bodyClass">
+          <input id="engine" type="hidden" name="engine">
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step" data-step="2">
+          <div class="step-heading">
+            <span class="step-icon">📄</span>
+            <div>
+              <h2>Ownership & title</h2>
+              <p>A few quick questions about how the vehicle is titled.</p>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <label class="field">
+              <span>Registration state <b>*</b></span>
+              <select name="registrationState" required>
+                <option value="">Select state</option>
+                <option>Colorado</option><option>Wyoming</option><option>Nebraska</option><option>Kansas</option>
+                <option>Utah</option><option>New Mexico</option><option>Arizona</option><option>Texas</option>
+                <option>California</option><option>Other</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Registered in your name? <b>*</b></span>
+              <select name="registeredInName" required>
+                <option value="">Select</option><option>Yes</option><option>No</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label class="field">
+              <span>More than one registered owner?</span>
+              <select name="multipleOwners"><option>No</option><option>Yes — 2 owners</option><option>Yes — 3+ owners</option></select>
+            </label>
+            <label class="field">
+              <span>Title / lien status <b>*</b></span>
+              <select name="titleStatus" required>
+                <option value="">Select</option>
+                <option>Clean title in hand</option>
+                <option>Clean title with a lien</option>
+                <option>No title / unsure</option>
+                <option>Branded / rebuilt / salvage</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label class="field">
+              <span>Approximate payoff</span>
+              <input name="payoff" type="number" min="0" step="1" placeholder="$0">
+            </label>
+            <label class="field">
+              <span>Any branded, flood, lemon or salvage history?</span>
+              <select name="brandedHistory"><option>No</option><option>Yes</option><option>Unsure</option></select>
+            </label>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" data-step="3">
+          <div class="step-heading">
+            <span class="step-icon">🔑</span>
+            <div>
+              <h2>Keys & maintenance</h2>
+              <p>Maintenance history can make a meaningful difference.</p>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <label class="field">
+              <span>How many working keys?</span>
+              <select name="keys"><option>2+</option><option>1</option><option>No working keys</option></select>
+            </label>
+            <label class="field">
+              <span>Service records?</span>
+              <select name="serviceRecords"><option>Complete records</option><option>Some records</option><option>No records</option></select>
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label class="field">
+              <span>When were the tires last replaced?</span>
+              <select name="tiresReplaced"><option>Less than 10,000 miles ago</option><option>10,000–25,000 miles ago</option><option>25,000–40,000 miles ago</option><option>More than 40,000 miles ago</option><option>Unsure</option></select>
+            </label>
+            <label class="field">
+              <span>When were the brakes last replaced?</span>
+              <select name="brakesReplaced"><option>Less than 10,000 miles ago</option><option>10,000–25,000 miles ago</option><option>25,000–40,000 miles ago</option><option>More than 40,000 miles ago</option><option>Unsure</option></select>
+            </label>
+          </div>
+
+          <fieldset class="check-group">
+            <legend>Any warning lights currently on?</legend>
+            <label><input type="checkbox" name="warningLights" value="Check engine"> Check engine</label>
+            <label><input type="checkbox" name="warningLights" value="ABS"> ABS</label>
+            <label><input type="checkbox" name="warningLights" value="Airbag"> Airbag</label>
+            <label><input type="checkbox" name="warningLights" value="TPMS"> TPMS</label>
+            <label><input type="checkbox" name="warningLights" value="Maintenance"> Maintenance / service</label>
+            <label><input type="checkbox" name="warningLights" value="None"> None</label>
+          </fieldset>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step" data-step="4">
+          <div class="step-heading">
+            <span class="step-icon">⚙️</span>
+            <div>
+              <h2>Mechanical condition</h2>
+              <p>Select anything you’re aware of. No diagnosis needed.</p>
+            </div>
+          </div>
+
+          <fieldset class="check-group cards">
+            <label><input type="checkbox" name="mechanicalIssues" value="Oil/fluid leaks"> Oil / fluid leaks</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="Engine noises"> Engine noises</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="Transmission issues"> Transmission issues</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="Suspension noises"> Suspension noises</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="Steering issues"> Steering issues</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="AC/heater issues"> A/C or heater issues</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="Electrical problems"> Electrical problems</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="Exhaust problems"> Exhaust problems</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="4WD/AWD problems"> 4WD / AWD problems</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="Battery/charging problems"> Battery / charging issues</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="Broken/nonworking parts"> Broken / nonworking parts</label>
+            <label><input type="checkbox" name="mechanicalIssues" value="None"> None that I’m aware of</label>
+          </fieldset>
+
+          <label class="field">
+            <span>Anything else we should know?</span>
+            <textarea name="mechanicalNotes" rows="5" placeholder="Any sounds, leaks, repairs needed, intermittent issues, modifications, etc."></textarea>
+          </label>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step" data-step="5">
+          <div class="step-heading">
+            <span class="step-icon">✨</span>
+            <div>
+              <h2>Exterior condition</h2>
+              <p>Tell us how the outside of the vehicle looks today.</p>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <label class="field"><span>Accident history?</span><select name="accidentHistory"><option>No</option><option>Yes</option><option>Unsure</option></select></label>
+            <label class="field"><span>Current body damage?</span><select name="bodyDamage"><option>None</option><option>Minor dents / scratches</option><option>Moderate damage</option><option>Significant damage</option></select></label>
+            <label class="field"><span>Hail damage?</span><select name="hailDamage"><option>None</option><option>Minor</option><option>Moderate</option><option>Heavy</option></select></label>
+            <label class="field"><span>Windshield condition?</span><select name="windshield"><option>Excellent</option><option>Minor chips</option><option>Cracked / chipped</option><option>Needs replacement</option></select></label>
+          </div>
+
+          <div class="rating-block">
+            <label>Paint condition <output id="paintOut">7</output>/10</label>
+            <input name="paintRating" type="range" min="1" max="10" value="7" oninput="paintOut.value=this.value">
+          </div>
+          <div class="rating-block">
+            <label>Wheel condition <output id="wheelOut">7</output>/10</label>
+            <input name="wheelRating" type="range" min="1" max="10" value="7" oninput="wheelOut.value=this.value">
+          </div>
+          <div class="rating-block">
+            <label>Tire condition <output id="tireOut">7</output>/10</label>
+            <input name="tireRating" type="range" min="1" max="10" value="7" oninput="tireOut.value=this.value">
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step" data-step="6">
+          <div class="step-heading">
+            <span class="step-icon">🪑</span>
+            <div>
+              <h2>Interior condition</h2>
+              <p>Help us understand the cabin condition.</p>
+            </div>
+          </div>
+
+          <div class="rating-block">
+            <label>Interior condition <output id="interiorOut">7</output>/10</label>
+            <input name="interiorRating" type="range" min="1" max="10" value="7" oninput="interiorOut.value=this.value">
+          </div>
+
+          <fieldset class="check-group cards">
+            <label><input type="checkbox" name="interiorIssues" value="Rips/tears"> Rips or tears</label>
+            <label><input type="checkbox" name="interiorIssues" value="Permanent stains"> Permanent stains</label>
+            <label><input type="checkbox" name="interiorIssues" value="Smoke odor"> Smoke odor</label>
+            <label><input type="checkbox" name="interiorIssues" value="Pet odor"> Pet odor</label>
+            <label><input type="checkbox" name="interiorIssues" value="Broken trim"> Broken trim</label>
+            <label><input type="checkbox" name="interiorIssues" value="Broken seats"> Broken seats</label>
+            <label><input type="checkbox" name="interiorIssues" value="Nonworking electronics"> Nonworking electronics</label>
+            <label><input type="checkbox" name="interiorIssues" value="Missing pieces"> Missing interior pieces</label>
+            <label><input type="checkbox" name="interiorIssues" value="None"> None</label>
+          </fieldset>
+
+          <div class="grid-2">
+            <label class="field"><span>Regular smoking inside?</span><select name="smokedIn"><option>No</option><option>Yes</option></select></label>
+            <label class="field"><span>Pets regularly ride inside?</span><select name="pets"><option>No</option><option>Yes</option></select></label>
+          </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step" data-step="7">
+          <div class="step-heading">
+            <span class="step-icon">📸</span>
+            <div>
+              <h2>Vehicle photos</h2>
+              <p>Photos help us tighten up the appraisal range.</p>
+            </div>
+          </div>
+
+          <label class="upload-zone" for="photos">
+            <div class="upload-icon">＋</div>
+            <strong>Add vehicle photos</strong>
+            <span>Exterior corners, interior, dashboard, odometer, tires, VIN sticker and any damage.</span>
+            <input id="photos" name="photos" type="file" accept="image/*" multiple>
+          </label>
+          <div id="photoPreview" class="photo-preview"></div>
+          <small class="muted">Up to 12 images. JPG, PNG, HEIC/HEIF or WebP recommended.</small>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="step" data-step="8">
+          <div class="step-heading">
+            <span class="step-icon">👋</span>
+            <div>
+              <h2>Last thing — how should I reach you?</h2>
+              <p>Your information goes directly to Matt Goldie so I can review your trade and help you figure out the best next move.</p>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <label class="field"><span>First name <b>*</b></span><input name="firstName" type="text" required></label>
+            <label class="field"><span>Last name <b>*</b></span><input name="lastName" type="text" required></label>
+          </div>
+          <div class="grid-2">
+            <label class="field"><span>Phone <b>*</b></span><input name="phone" type="tel" required></label>
+            <label class="field"><span>Email <b>*</b></span><input name="email" type="email" required></label>
+          </div>
+          <div class="grid-2">
+            <label class="field"><span>Preferred contact</span><select name="preferredContact"><option>Text</option><option>Call</option><option>Email</option></select></label>
+            <label class="field"><span>When are you looking to trade?</span><select name="timeline"><option>Today</option><option>Next few days</option><option>1–2 weeks</option><option>This month</option><option>Just curious</option></select></label>
+          </div>
+          <label class="field">
+            <span>What are you hoping to replace it with?</span>
+            <input name="replacementVehicle" type="text" placeholder="2026 4Runner, full-size truck, not sure yet...">
+          </label>
+
+          <label class="consent">
+            <input type="checkbox" name="contactConsent" required>
+            <span>I agree that Matt Goldie / Goldie Sold Me may contact me about this appraisal by phone, text or email. This preliminary estimate is not a purchase offer.</span>
+          </label>
+        </div>
+
+        <div class="form-nav">
+          <button id="backBtn" type="button" class="ghost-btn hidden">← Back</button>
+          <button id="nextBtn" type="button" class="primary-btn">Continue →</button>
+          <button id="submitBtn" type="submit" class="primary-btn hidden">See My Appraisal Range →</button>
+        </div>
+      </form>
+
+      <section id="result" class="result hidden">
+        <div class="result-kicker">YOUR PAINLESS APPRAISAL RANGE</div>
+        <h2 id="resultVehicle">Your Vehicle</h2>
+        <div class="range" id="resultRange">$— — $—</div>
+        <p id="resultBasis"></p>
+
+        <div class="result-grid">
+          <div><span>Market retail estimate</span><strong id="retailEstimate">—</strong></div>
+          <div><span>Trade adjustment</span><strong id="tradeAdjustment">—</strong></div>
+          <div><span>Condition adjustment</span><strong id="conditionAdjustment">—</strong></div>
+          <div><span>Comparable vehicles</span><strong id="compCount">—</strong></div>
+        </div>
+
+        <div class="notice">
+          This is a preliminary estimate only and is not an offer to purchase. Final value is subject to in-person inspection, vehicle history, equipment, title status, payoff, condition and current market conditions.
+        </div>
+        <button type="button" class="secondary-btn" onclick="window.location.reload()">Appraise Another Vehicle</button>
+      </section>
+    </section>
+
+    <footer>
+      <strong>GOLDIE SOLD ME</strong>
+      <span>Matt Goldie • Painless car buying, selling & trade help.</span>
+    </footer>
+  </main>
+
+  <script>
+const form = document.getElementById('appraisalForm');
+const steps = [...document.querySelectorAll('.step')];
+const backBtn = document.getElementById('backBtn');
+const nextBtn = document.getElementById('nextBtn');
+const submitBtn = document.getElementById('submitBtn');
+const stepLabel = document.getElementById('stepLabel');
+const progressPct = document.getElementById('progressPct');
+const progressBar = document.getElementById('progressBar');
+let currentStep = 1;
+const API_BASE = 'https://goldie-appraisal-api.goldiesoldme.workers.dev';
+
+function showStep(n){
+  currentStep = n;
+  steps.forEach(s => s.classList.toggle('active', Number(s.dataset.step) === n));
+  const pct = Math.round((n / steps.length) * 100);
+  stepLabel.textContent = `Step ${n} of ${steps.length}`;
+  progressPct.textContent = `${pct}%`;
+  progressBar.style.width = `${pct}%`;
+  backBtn.classList.toggle('hidden', n === 1);
+  nextBtn.classList.toggle('hidden', n === steps.length);
+  submitBtn.classList.toggle('hidden', n !== steps.length);
+  window.scrollTo({top: document.querySelector('.app-card').offsetTop - 12, behavior:'smooth'});
+}
+function validateStep(){
+  const active = steps[currentStep - 1];
+  const required = [...active.querySelectorAll('[required]')];
+  let good = true;
+  required.forEach(el=>{
+    el.classList.remove('error');
+    if(!el.checkValidity()){
+      el.classList.add('error'); good = false;
+    }
+  });
+  if(!good) required.find(x=>!x.checkValidity())?.focus();
+  return good;
+}
+nextBtn.addEventListener('click',()=>{ if(validateStep() && currentStep < steps.length) showStep(currentStep+1); });
+backBtn.addEventListener('click',()=>{ if(currentStep>1) showStep(currentStep-1); });
+
+const vinInput = document.getElementById('vin');
+vinInput.addEventListener('input',()=> vinInput.value = vinInput.value.toUpperCase().replace(/[^A-HJ-NPR-Z0-9]/g,'').slice(0,17));
+
+async function decodeVin(){
+  const vin = vinInput.value.trim();
+  const status = document.getElementById('vinStatus');
+  const btn = document.getElementById('decodeVinBtn');
+  if(vin.length !== 17){ status.textContent='Please enter a complete 17-digit VIN.'; vinInput.classList.add('error'); return; }
+  btn.classList.add('loading'); status.textContent='Decoding VIN…'; vinInput.classList.remove('error');
+  try{
+    const res = await fetch(`${API_BASE}/decode-vin?vin=${encodeURIComponent(vin)}`);
+    const data = await res.json();
+    if(!res.ok) throw new Error(data.error || 'Unable to decode VIN');
+    const v = data.vehicle;
+    ['year','make','model','driveType','bodyClass','engine'].forEach(k=> document.getElementById(k).value = v[k] || '');
+    if(v.trim && !document.getElementById('trim').value) document.getElementById('trim').value = v.trim;
+    document.getElementById('decodedTitle').textContent = [v.year,v.make,v.model,v.trim].filter(Boolean).join(' ');
+    document.getElementById('decodedSubtitle').textContent = [v.driveType,v.bodyClass,v.engine].filter(Boolean).join(' • ');
+    document.getElementById('decodedVehicle').classList.remove('hidden');
+    status.textContent='VIN decoded successfully.';
+  }catch(e){
+    status.textContent=e.message;
+    document.getElementById('decodedVehicle').classList.add('hidden');
+  }finally{ btn.classList.remove('loading'); }
+}
+document.getElementById('decodeVinBtn').addEventListener('click', decodeVin);
+vinInput.addEventListener('blur',()=>{ if(vinInput.value.length===17 && !document.getElementById('year').value) decodeVin(); });
+
+const photos = document.getElementById('photos');
+photos.addEventListener('change',()=>{
+  const preview = document.getElementById('photoPreview');
+  preview.innerHTML='';
+  [...photos.files].slice(0,12).forEach(file=>{
+    if(file.type.startsWith('image/')){
+      const img=document.createElement('img');
+      img.src=URL.createObjectURL(file);
+      preview.appendChild(img);
+    }
+  });
+});
+
+function formValue(name){
+  return form.elements[name]?.value || '';
+}
+function checkedValues(name){
+  return [...form.querySelectorAll(`input[name="${name}"]:checked`)].map(x=>x.value);
+}
+function clamp(n,min,max){ return Math.min(max,Math.max(min,n)); }
+function round100(n){ return Math.round(n/100)*100; }
+
+function conditionAdjustmentPercent(){
+  let pct = 0;
+
+  const title = formValue('titleStatus');
+  const branded = formValue('brandedHistory');
+  if(title.includes('Branded') || branded === 'Yes') pct -= 0.25;
+  else if(title.includes('No title')) pct -= 0.08;
+
+  if(formValue('accidentHistory') === 'Yes') pct -= 0.04;
+
+  const body = formValue('bodyDamage');
+  if(body.includes('Minor')) pct -= 0.02;
+  if(body.includes('Moderate')) pct -= 0.05;
+  if(body.includes('Significant')) pct -= 0.10;
+
+  const hail = formValue('hailDamage');
+  if(hail === 'Minor') pct -= 0.015;
+  if(hail === 'Moderate') pct -= 0.04;
+  if(hail === 'Heavy') pct -= 0.08;
+
+  const glass = formValue('windshield');
+  if(glass === 'Minor chips') pct -= 0.005;
+  if(glass === 'Cracked / chipped') pct -= 0.01;
+  if(glass === 'Needs replacement') pct -= 0.015;
+
+  const ratingWeights = [
+    ['paintRating',0.007,0.003],
+    ['wheelRating',0.004,0.002],
+    ['tireRating',0.006,0.002],
+    ['interiorRating',0.006,0.002]
+  ];
+  ratingWeights.forEach(([name,down,up])=>{
+    const r = Number(formValue(name) || 7);
+    pct += r < 7 ? -(7-r)*down : (r-7)*up;
+  });
+
+  const warnings = checkedValues('warningLights').filter(x=>x !== 'None');
+  pct -= Math.min(warnings.length * 0.0125, 0.05);
+
+  const mechanical = checkedValues('mechanicalIssues').filter(x=>!x.startsWith('None'));
+  pct -= Math.min(mechanical.length * 0.02, 0.10);
+
+  const interior = checkedValues('interiorIssues').filter(x=>x !== 'None');
+  pct -= Math.min(interior.length * 0.0075, 0.04);
+
+  if(formValue('smokedIn') === 'Yes') pct -= 0.03;
+  if(formValue('pets') === 'Yes') pct -= 0.005;
+
+  const keys = formValue('keys');
+  if(keys === '1') pct -= 0.005;
+  if(keys === 'No working keys') pct -= 0.02;
+
+  const records = formValue('serviceRecords');
+  if(records === 'Complete records') pct += 0.005;
+  if(records === 'No records') pct -= 0.005;
+
+  return clamp(pct,-0.35,0.04);
+}
+
+form.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  if(!validateStep()) return;
+  submitBtn.disabled=true; submitBtn.textContent='Calculating…';
+  try{
+    const payload = {
+      vin: formValue('vin'),
+      mileage: Number(formValue('mileage')),
+      vehicleZip: formValue('vehicleZip')
+    };
+
+    const res = await fetch(`${API_BASE}/appraise`,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(payload)
+    });
+    const data = await res.json();
+    if(!res.ok) throw new Error(data.error || 'Unable to calculate appraisal');
+
+    const mc = data.marketcheck || {};
+    const retail = Number(mc.marketcheck_price || 0);
+    if(!retail) throw new Error('MarketCheck did not return a market value for this vehicle.');
+
+    // MarketCheck predicts retail market price. Start the preliminary trade estimate
+    // 10% below retail, then adjust for the condition answers supplied by the customer.
+    const tradeAdjustment = -(retail * 0.10);
+    const conditionPct = conditionAdjustmentPercent();
+    const conditionAdjustment = retail * conditionPct;
+    const center = Math.max(500, retail + tradeAdjustment + conditionAdjustment);
+    const low = round100(center * 0.975);
+    const high = round100(center * 1.025);
+    const comparableCount = Number(mc.comparables?.num_found || mc.recent_comparables?.num_found || 0);
+    const vehicle = [formValue('year'),formValue('make'),formValue('model'),formValue('trim')].filter(Boolean).join(' ') || 'Your Vehicle';
+
+    form.classList.add('hidden');
+    document.querySelector('.progress-wrap').classList.add('hidden');
+    document.getElementById('resultVehicle').textContent = vehicle;
+    document.getElementById('resultRange').textContent = `${money(low)} — ${money(high)}`;
+    document.getElementById('resultBasis').textContent = comparableCount
+      ? `Based on MarketCheck's current retail prediction, ${comparableCount.toLocaleString()} comparable listings and the condition information you provided.`
+      : `Based on MarketCheck's current retail prediction and the condition information you provided.`;
+    document.getElementById('retailEstimate').textContent = money(retail);
+    document.getElementById('tradeAdjustment').textContent = money(tradeAdjustment);
+    document.getElementById('conditionAdjustment').textContent = `${conditionAdjustment>=0?'+':''}${money(conditionAdjustment)}`;
+    document.getElementById('compCount').textContent = comparableCount ? comparableCount.toLocaleString() : '—';
+    document.getElementById('result').classList.remove('hidden');
+    window.scrollTo({top:document.querySelector('.app-card').offsetTop-12,behavior:'smooth'});
+  }catch(err){
+    alert(err.message);
+    submitBtn.disabled=false; submitBtn.textContent='See My Appraisal Range →';
+  }
+});
+function money(n){ return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(Number(n||0)); }
+showStep(1);
+
+</script>
+</body>
+</html>
